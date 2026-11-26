@@ -70,6 +70,30 @@ window.OFFERS = [
      "<b>Có sẵn thẻ tín dụng FE CREDIT:</b> nếu chọn phương án làm thay đổi hạn mức thẻ, hạn mức mới áp dụng sau 1–2 ngày làm việc và không thể khôi phục hạn mức cũ.",
      "<b>Chuyển tiền từ UBank sang ngân hàng khác:</b> trong app chọn mục \"Ubank\" → \"Chuyển khoản\", nhập thông tin người nhận và xác nhận bằng Smart OTP."]
    }},
+  /* ---- TNEX Finance (thuộc MSB): vay tiêu dùng online (AccessTrade) ---- */
+  {id:"tnex",name:"TNEX – Vay online chỉ cần CCCD",cc:"VN",from:"VN",pin:true,
+   logo:"tnex",
+   epc:0,link:"",   /* ← DÁN LINK AFFILIATE TNEX VÀO ĐÂY */
+   tags:["Đến 30 triệu","Tối đa 15 tháng","Không cần chứng minh thu nhập"],
+   guide:{
+    info:[["Hạn mức tiền mặt","Đến 30 triệu đồng"],["Kỳ hạn","Tối đa 15 tháng"],["Lãi suất","24,4% – 32,5%/năm"],["Duyệt & giải ngân","Khoảng 30 phút"]],
+    req:["CCCD gắn chip","Độ tuổi phù hợp: 18 – 50","Số điện thoại chính chủ","Không cần chứng minh thu nhập","Thông tin người liên hệ"],
+    steps:[
+     ["Điền thông tin đăng ký","Bấm \"Đăng ký tại TNEX\", nhập họ tên, số điện thoại và số tiền cần vay rồi gửi thông tin."],
+     ["Chọn số tiền & thời gian vay","Chọn số tiền và kỳ hạn mong muốn, xem số tiền trả hằng tháng dự kiến."],
+     ["Nhập thông tin cá nhân","Cung cấp số điện thoại, email, địa chỉ, nghề nghiệp và nhu cầu vay."],
+     ["Thông tin người liên hệ","Nhập người liên hệ. Theo TNEX, người liên hệ được bảo mật và chỉ được liên hệ khi thật sự cần theo quy định của ngân hàng."],
+     ["Định danh eKYC","Chụp mặt trước, mặt sau CCCD gắn chip và chụp chân dung khuôn mặt."],
+     ["Xác nhận thông tin","Kiểm tra lại toàn bộ thông tin đăng ký khoản vay và xác nhận."],
+     ["Duyệt & nhận tiền trên app TNEX","Tải app TNEX trên App Store hoặc CH Play. Khi được duyệt, khoản vay được giải ngân trên app."]],
+    notesTitle:"Lưu ý về khoản vay",
+    notes:[
+     "<b>Lãi suất 24,4% – 32,5%/năm tính trên dư nợ gốc ban đầu</b>, mức cụ thể tùy xếp hạng tín dụng. Vì lãi tính trên gốc ban đầu nên chi phí thực tế cao hơn cách tính trên dư nợ giảm dần — hãy xem kỹ tổng số tiền phải trả trong hợp đồng.",
+     "<b>Trả góp hằng tháng</b> gồm cả gốc và lãi.",
+     "<b>Ưu đãi thêm trên app TNEX:</b> có cơ hội nhận hạn mức mua trước trả sau đến 20 triệu đồng, miễn lãi tối đa 35 ngày (theo chương trình của TNEX).",
+     "<b>Tài khoản TNEX</b> cho phép rút tiền, chuyển khoản 24/7, miễn phí toàn quốc.",
+     "TNEX Finance thuộc Ngân hàng TMCP Hàng Hải Việt Nam (MSB)."]
+   }},
   {id:545,name:"Acredit",cc:"KZ",from:"KZ",logo:"acredit",epc:4.6242,link:"https://track.leadsmatcher.com/click?pid=8527&offer_id=545"},
   {id:1045,name:"SafeCredit",cc:"RO",from:"RO",logo:"safecredit",epc:1.5507,link:"https://track.leadsmatcher.com/click?pid=8527&offer_id=1045"},
   {id:508,name:"HoraCredit",cc:"RO",from:"RO",logo:"horacredit",epc:1.1775,link:"https://track.crezu.net/click?pid=8527&offer_id=508"},
