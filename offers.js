@@ -40,6 +40,36 @@ window.OFFERS = [
      "<b>Phí tất toán trước hạn</b> (trả trước tối thiểu 2 triệu đồng): 5% số tiền trả trước nếu tất toán trong 12 tháng đầu, 3% từ tháng 13 đến 24, 1% sau 24 tháng.",
      "<b>Tất toán trên app VPBank NEO:</b> Khoản vay → chọn khoản vay → Quản lý → Tất toán → nhập thông tin theo yêu cầu."]
    }},
+  /* ---- FE CREDIT: Tiền mặt linh hoạt qua app FE Online 2.0 (AccessTrade) — theo tài liệu "Hướng dẫn chạy chiến dịch FE CREDIT APP 2.0" ---- */
+  {id:"fecredit",name:"FE CREDIT – Vay qua app FE Online 2.0",cc:"VN",from:"VN",pin:true,
+   logo:"https://www.google.com/s2/favicons?sz=128&domain=fecredit.com.vn",
+   epc:0,link:"https://shorten.asia/bPaUdHpk",
+   tags:["Tiền mặt linh hoạt","Đăng ký 100% online","Nhận tiền qua UBank"],
+   guide:{
+    info:[["Sản phẩm","Tiền mặt linh hoạt (FlexiMoney)"],["Ứng dụng","FE Online 2.0"],["Nhận tiền","Tài khoản UBank hoặc điểm chi hộ"],["Hình thức","Đăng ký & ký hợp đồng online"]],
+    req:["CCCD gắn chip còn hạn","Đủ tuổi theo quy định của FE CREDIT","Số điện thoại chính chủ","Điện thoại có camera (nên có NFC để đọc chip CCCD)","Thông tin công việc, thu nhập và người tham chiếu"],
+    steps:[
+     ["Điền thông tin trên trang đăng ký","Bấm \"Đăng ký tại FE CREDIT\", điền họ tên, email, số điện thoại, số CCCD, ngày sinh rồi gửi."],
+     ["Tải app FE Online 2.0","Sau khi đăng ký thành công, bấm nút \"Mở ứng dụng\" trên màn hình để tải app FE Online 2.0. Nên tải qua nút này, không tự tìm trên kho ứng dụng."],
+     ["Cấp quyền cho app","Cho phép app dùng Camera, Vị trí (bắt buộc khi ký hợp đồng và nhận tiền), Thông báo và Micro. Tắt chế độ tiết kiệm pin."],
+     ["Tạo tài khoản","Chọn \"Khám phá sản phẩm\" → \"Tiền mặt linh hoạt\" → \"Đăng ký\". Nhập số điện thoại, số CCCD, tích đồng ý điều khoản và nhập mã OTP."],
+     ["Định danh điện tử","Chụp mặt trước CCCD, quét mã QR, chụp mặt sau rồi xác thực khuôn mặt. Cập nhật nghề nghiệp, chức vụ và địa chỉ, sau đó tạo mật khẩu."],
+     ["Bắt đầu hồ sơ vay","Đăng nhập, chọn \"Khoản trả góp\" → \"Bắt đầu\". Xác nhận đồng ý xử lý dữ liệu cá nhân (bắt buộc chọn mục đích 1)."],
+     ["Chọn số tiền & kỳ hạn","Kiểm tra lại CCCD, chọn \"Số tiền yêu cầu\" và \"Kỳ hạn trả góp\". Để trống ô mã giới thiệu."],
+     ["Xác thực bổ sung (nếu có)","Nếu app yêu cầu: chụp khuôn mặt, CCCD hoặc áp CCCD gắn chip vào điện thoại (NFC) theo hướng dẫn."],
+     ["Khai thông tin hồ sơ","Mục đích vay, nghề nghiệp, thu nhập và chi tiêu hằng tháng, thông tin công ty, địa chỉ hiện tại, học vấn, hôn nhân và người tham chiếu. Bấm gửi hồ sơ."],
+     ["Mở tài khoản UBank","Đọc điều khoản, chọn \"Ký hợp đồng\" và nhập OTP để mở tài khoản thanh toán UBank nhận tiền."],
+     ["Ký hợp đồng điện tử","Vào \"Khoản trả góp\" → \"Ký hợp đồng\", xác thực khuôn mặt, kiểm tra thông tin và nhập OTP."],
+     ["Chọn ưu đãi khi được duyệt","Khi có thông báo phê duyệt: \"Khoản trả góp\" → \"Chọn ưu đãi\", xác thực khuôn mặt, chọn phương án phù hợp và bấm \"Xác nhận\"."],
+     ["Nhận tiền","Chọn nhận tiền qua tài khoản UBank hoặc tại điểm chi hộ, xác nhận bằng OTP."]],
+    notesTitle:"Lưu ý khi đăng ký",
+    notes:[
+     "<b>Hồ sơ không đạt nếu:</b> chưa đủ tuổi, CCCD hết hạn, hoặc ảnh CCCD bị mờ, lóa, mất góc. Hãy chụp đủ 4 góc, rõ nét, không lóa sáng.",
+     "<b>Đã có tài khoản FE Online:</b> chọn \"Đăng nhập\" thay vì đăng ký mới.",
+     "<b>Nhận tiền tại điểm chi hộ:</b> mang CCCD và mã bảo mật. Trong app chọn \"Nhận mã giao dịch\" rồi đọc mã cho giao dịch viên.",
+     "<b>Có sẵn thẻ tín dụng FE CREDIT:</b> nếu chọn phương án làm thay đổi hạn mức thẻ, hạn mức mới áp dụng sau 1–2 ngày làm việc và không thể khôi phục hạn mức cũ.",
+     "<b>Chuyển tiền từ UBank sang ngân hàng khác:</b> trong app chọn mục \"Ubank\" → \"Chuyển khoản\", nhập thông tin người nhận và xác nhận bằng Smart OTP."]
+   }},
   {id:545,name:"Acredit",cc:"KZ",from:"KZ",logo:"acredit",epc:4.6242,link:"https://track.leadsmatcher.com/click?pid=8527&offer_id=545"},
   {id:1045,name:"SafeCredit",cc:"RO",from:"RO",logo:"safecredit",epc:1.5507,link:"https://track.leadsmatcher.com/click?pid=8527&offer_id=1045"},
   {id:508,name:"HoraCredit",cc:"RO",from:"RO",logo:"horacredit",epc:1.1775,link:"https://track.crezu.net/click?pid=8527&offer_id=508"},
