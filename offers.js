@@ -70,7 +70,6 @@ window.OFFERS = [
   {id:590,name:"Tengeplus",cc:"KZ",from:"KZ",logo:"tengeplus",epc:0.2104,link:"https://track.leadsmatcher.com/click?pid=8527&offer_id=590"},
   {id:167,name:"Crezu",cc:"KZ",from:"KZ",logo:"crezu-kz",epc:0.1915,link:"https://track.leadsmatcher.com/click?pid=8527&offer_id=167"},
   {id:46,name:"AndaCrédito",cc:"MX",from:"MX",logo:"andacredito-mx",epc:0.1846,link:"https://track.leadsmatcher.com/click?pid=8527&offer_id=46"},
-  {id:1255,name:"Credivenus",cc:"ALL",from:"",logo:"credivenus",epc:0.1784,link:"https://track.leadsmatcher.com/click?pid=8527&offer_id=1255"},
   {id:302,name:"BanCoppel",cc:"MX",from:"MX",logo:"coppel",epc:0.1777,link:"https://track.crezu.net/click?pid=8527&offer_id=302"},
   {id:1007,name:"Prestamiau",cc:"ES",from:"ES",logo:"prestamiau-es",epc:0.1621,link:"https://track.leadsmatcher.com/click?pid=8527&offer_id=1007"},
   {id:753,name:"Cashspace",cc:"MX",from:"MX",logo:"cashspace-mx",epc:0.1528,link:"https://track.leadsmatcher.com/click?pid=8527&offer_id=753"},
