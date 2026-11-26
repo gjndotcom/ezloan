@@ -13,7 +13,7 @@
 window.OFFERS = [
   /* ---- VPBank: vay tín chấp (AccessTrade) — hướng dẫn theo tài liệu "Hướng dẫn luồng vay tín chấp VPBank" ---- */
   {id:"vpbank",name:"VPBank – Vay tín chấp",cc:"VN",from:"VN",pin:true,
-   logo:"https://www.google.com/s2/favicons?sz=128&domain=vpbank.com.vn",
+   logo:"vpbank.svg",
    epc:0,link:"https://shorten.asia/2B4zAmf1",
    tags:["10 – 100 triệu","6 – 60 tháng","Không cần tài sản đảm bảo"],
    guide:{
@@ -39,6 +39,47 @@ window.OFFERS = [
      "<b>Bảo hiểm không bắt buộc.</b> Nếu được gọi mời mua bảo hiểm mà bạn không có nhu cầu, hãy trả lời rõ \"Không đồng ý mua bảo hiểm\". Nếu đã bị thu phí bảo hiểm ngoài ý muốn, gọi tổng đài <b>1900 545415</b> để yêu cầu hoàn phí.",
      "<b>Phí tất toán trước hạn</b> (trả trước tối thiểu 2 triệu đồng): 5% số tiền trả trước nếu tất toán trong 12 tháng đầu, 3% từ tháng 13 đến 24, 1% sau 24 tháng.",
      "<b>Tất toán trên app VPBank NEO:</b> Khoản vay → chọn khoản vay → Quản lý → Tất toán → nhập thông tin theo yêu cầu."]
+   }},
+  /* ---- VPBank: mở thẻ tín dụng online (AccessTrade) — theo "Tài liệu HD mở thẻ VPBank" ---- */
+  {id:"vpbankcard",name:"VPBank – Mở thẻ tín dụng online",cc:"VN",from:"VN",pin:true,
+   logo:"vpbank.svg",
+   epc:0,link:"https://shorten.asia/A9R32ABP",
+   tags:["Hạn mức đến 100 triệu","Mở thẻ 100% online","Nhiều dòng thẻ hoàn tiền"],
+   guide:{
+    info:[["Hạn mức thẻ","5 – 100 triệu (tùy dòng thẻ)"],["Lãi suất thẻ","2,79% – 3,99%/tháng"],["Phí thường niên","150.000đ – 1.200.000đ (chưa VAT)"],["Phê duyệt","Kết quả sau vài phút"]],
+    req:["CCCD gắn chip hoặc Căn cước mới","Độ tuổi khoảng 23 – 60","Có công việc, thu nhập ổn định (nhận cả người có lương hưu)","Chưa có thẻ tín dụng VPBank","Không có nợ xấu, nợ quá hạn","Số điện thoại chính chủ, dùng trên 1 tháng"],
+    table:{title:"Các dòng thẻ có thể mở",
+     head:["Dòng thẻ","Hạn mức","Lãi suất/tháng","Phí thường niên","Ưu đãi chính"],
+     rows:[
+      ["No.1","10 – 30 triệu","3,99%","150.000đ","Rút tiền mặt không mất phí, tích điểm, trả góp"],
+      ["MC2","10 – 70 triệu","3,99%","299.000đ","Tích điểm đổi quà, trả góp"],
+      ["StepUp / Lady","30 – 100 / 20 – 100 triệu","3,29%","499.000đ","Hoàn tiền, trả góp, giảm giá tại đối tác"],
+      ["JCB Z","20 – 100 triệu","3,99%","399.000đ","Hoàn tiền, quà chào mừng"],
+      ["Shopee / Super Shopee","5 – 100 / 15 – 100 triệu","3,99% / 3,29%","299.000đ / 499.000đ","Hoàn tiền, lượt giao hàng miễn phí"],
+      ["VNA Platinum","40 – 100 triệu","2,99%","899.000đ","Tích dặm bay Vietnam Airlines"],
+      ["Visa Platinum Travel","40 – 100 triệu","2,99%","899.000đ","Tích Travel Miles, trả góp"],
+      ["Visa Signature Travel Miles","60 – 100 triệu","2,79%","1.200.000đ","Tích Travel Miles, miễn phí năm đầu"]],
+     note:"Phí chưa gồm VAT. Điều kiện miễn phí thường niên năm đầu khác nhau theo từng thẻ. Dòng thẻ được mở tùy kết quả xét duyệt; ưu đãi có thể thay đổi — xem chi tiết tại vpbank.com.vn."},
+    steps:[
+     ["Mở link bằng trình duyệt","Bấm \"Đăng ký tại VPBank\". Nên mở bằng Chrome hoặc Safari; nếu đang ở Zalo/Messenger, hãy sao chép link và dán vào trình duyệt để chụp CCCD không bị lỗi."],
+     ["Nhập số điện thoại & OTP","Dùng số chính chủ, đã dùng trên 1 tháng. Mã OTP nhận tối đa 4 lần trong 48 giờ."],
+     ["Thông tin công việc & email","Nhập tên công ty đầy đủ (chỉ viết tắt TNHH, CTCP…). Làm tự do/kinh doanh thì ghi tên công việc, ví dụ \"Hộ kinh doanh ABC\". Nhập đúng email để nhận thông tin thẻ."],
+     ["Thông tin CCCD","Quét mã QR trên CCCD hoặc tự nhập. Kiểm tra kỹ ngày cấp, ngày hết hạn, ngày sinh; người sinh năm 1995 trở về trước cần nhập số CMND cũ."],
+     ["Địa chỉ hiện tại & xác nhận","Nhập đầy đủ nơi đang ở (cả số phòng nếu ở chung cư), rồi xác nhận lại toàn bộ thông tin."],
+     ["Chọn dòng thẻ","Chờ duyệt sơ bộ khoảng 1 phút, sau đó vuốt để chọn dòng thẻ phù hợp."],
+     ["Chụp CCCD & khuôn mặt","Chụp 2 mặt CCCD và xác thực khuôn mặt."],
+     ["Thông tin bổ sung & nơi nhận thẻ","Nhập người liên hệ khẩn cấp (đã kết hôn thì là vợ/chồng; không điền chính mình) và chọn nhận thẻ tại công ty hoặc địa chỉ hiện tại."],
+     ["Gọi video hoặc ký hợp đồng điện tử","Nếu được yêu cầu gọi video, link sẽ gửi qua Zalo OA VPBank về số điện thoại đăng ký. Nếu không, ký hợp đồng điện tử bằng OTP."],
+     ["Nhận kết quả & kích hoạt thẻ","Kết quả cuối cùng sau khoảng 5 phút. Khi nhận thẻ, kích hoạt trên app VPBank NEO."]],
+    notesTitle:"Lưu ý để hồ sơ được duyệt",
+    notes:[
+     "<b>Ảnh CCCD:</b> rõ nét, đặt trên mặt phẳng trơn, không lóa, không mất góc. <b>Ảnh khuôn mặt:</b> chụp chính diện, không đeo kính, không đội mũ, phía sau không có người khác.",
+     "Chụp lỗi quá nhiều lần sẽ bị tạm dừng vài giờ. Nếu ảnh rõ mà ngân hàng vẫn từ chối, hồ sơ phải chờ 30 ngày mới đăng ký lại.",
+     "<b>Thông tin khác với CCCD:</b> chỉ được sửa 1 lần. Nếu được yêu cầu cập nhật tại quầy, hãy ra chi nhánh VPBank cập nhật, chờ ít nhất 30 phút rồi bấm \"Đã cập nhật thông tin tại quầy\".",
+     "<b>Cuộc gọi video:</b> chuẩn bị sẵn CCCD, mạng ổn định, nơi yên tĩnh; tự trả lời câu hỏi, không để người khác nhắc.",
+     "<b>Lỗi camera:</b> vào Cài đặt điện thoại, cho phép trình duyệt truy cập Camera. Màn hình chụp bị đen thì tải lại trang.",
+     "<b>Đăng ký dở dang:</b> có thể vào lại tại cards.vpbank.com.vn/re-enter để tiếp tục từ bước đang dừng.",
+     "<b>Kích hoạt thẻ trên VPBank NEO:</b> Trang chủ → Thẻ → chọn thẻ cần kích hoạt → nhập 4 số cuối thẻ → xác thực khuôn mặt → nhập OTP. Hoặc ra quầy VPBank gần nhất để được hỗ trợ."]
    }},
   /* ---- FE CREDIT: Tiền mặt linh hoạt qua app FE Online 2.0 (AccessTrade) — theo tài liệu "Hướng dẫn chạy chiến dịch FE CREDIT APP 2.0" ---- */
   {id:"fecredit",name:"FE CREDIT – Vay qua app FE Online 2.0",cc:"VN",from:"VN",pin:true,

@@ -147,6 +147,12 @@ details p{padding:0 24px 20px;color:var(--muted)}
 .gnotes{list-style:none;display:grid;gap:10px;margin-bottom:22px}
 .gnotes li{padding:12px 16px;border-radius:12px;background:var(--card);border:1px solid var(--line);font-size:.9rem;color:#d9d4c2}
 .gnotes b{color:var(--gold2)}
+.gtable{overflow-x:auto;border:1px solid var(--line);border-radius:12px;margin-bottom:8px}
+.gtable table{width:100%;border-collapse:collapse;font-size:.84rem;min-width:560px}
+.gtable th{background:rgba(212,175,55,.12);color:var(--gold2);text-align:left;padding:10px 12px;font-weight:600}
+.gtable td{padding:9px 12px;border-top:1px solid var(--line);color:#d9d4c2;vertical-align:top}
+.gtable td:first-child{color:var(--text);font-weight:600}
+.gnote{color:var(--muted);font-size:.8rem;margin-bottom:22px}
 .card.pin{border-color:rgba(212,175,55,.55);box-shadow:0 0 30px rgba(212,175,55,.12)}
 
 footer{border-top:1px solid rgba(212,175,55,.15);padding:50px 0 30px;background:#050507}
@@ -213,7 +219,7 @@ footer{border-top:1px solid rgba(212,175,55,.15);padding:50px 0 30px;background:
 
 <div class="modal" id="modal"><div class="modal-box" id="mbox"></div></div>
 
-<script src="offers.js?v=8"></script>
+<script src="offers.js?v=9"></script>
 <script src="i18n.js?v=1"></script>
 <script>
 const O=window.OFFERS.filter(o=>o.link), C=   /* offer chưa có link thì tạm ẩn */window.COUNTRIES, T=window.I18N;
@@ -238,7 +244,7 @@ const norm=s=>s.normalize('NFD').replace(/[̀-ͯ]/g,'').replace(/đ/g,'d').repla
 const cname=cc=>{ try{return new Intl.DisplayNames([lang],{type:'region'}).of(cc);}catch{return cc;} };
 const fmt=(s,o)=>s.replace('{n}',o.name).replace('{id}',(C[o.cc]||{}).id||'ID');
 const where=o=>isAll(o)?`<div class="where">🌐 ${t('all')}</div>`:`<div class="where">${flag(o.cc)} ${cname(o.cc)}</div>`;
-const logoHTML=o=>o.logo?`<div class="lg"><img src="${/^https?:/.test(o.logo)?o.logo:'logos/'+o.logo+'.png'}" alt="${o.name}"></div>`:`<div class="lg mono">${o.name.slice(0,2).toUpperCase()}</div>`;
+const logoHTML=o=>o.logo?`<div class="lg"><img src="${/^https?:/.test(o.logo)?o.logo:'logos/'+o.logo+(/\.\w+$/.test(o.logo)?'':'.png')}" alt="${o.name}"></div>`:`<div class="lg mono">${o.name.slice(0,2).toUpperCase()}</div>`;
 const applyBtn=(o,cls='')=>`<a class="btn btn-gold ${cls}" href="${o.link||'#'}" ${o.link?'':'aria-disabled="true"'} target="_blank" rel="nofollow sponsored noopener">${t('apply')} ↗</a>`;
 
 async function detect(){
@@ -292,6 +298,7 @@ function openGuide(o){
     <h4>${t('m_req')}</h4><div class="req">${(g&&g.req||t('req')).map(r=>`<span>✓ ${r.replace('{id}',idName)}</span>`).join('')}</div>
     <h4>${t('m_steps')}</h4>
     <ol class="timeline">${(g&&g.steps||t('steps')).map(([a,b],i)=>`<li><span class="n">${i+1}</span><h5>${a}</h5><p>${b}</p></li>`).join('')}</ol>
+    ${g&&g.table?`<h4>💳 ${g.table.title}</h4><div class="gtable"><table><thead><tr>${g.table.head.map(h=>`<th>${h}</th>`).join('')}</tr></thead><tbody>${g.table.rows.map(r=>`<tr>${r.map(c=>`<td>${c}</td>`).join('')}</tr>`).join('')}</tbody></table></div>${g.table.note?`<p class="gnote">${g.table.note}</p>`:''}`:''}
     ${g&&g.hours?`<h4>🕒 ${g.hours[0]}</h4><div class="info">${g.hours.slice(1).map(([a,b])=>`<div><small>${a}</small><b>${b}</b></div>`).join('')}</div>`:''}
     ${g&&g.notes?`<h4>💡 ${g.notesTitle}</h4><ul class="gnotes">${g.notes.map(n=>`<li>${n}</li>`).join('')}</ul>`:''}
     <div class="note">⚠ ${t('warn')}</div>
