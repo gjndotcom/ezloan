@@ -7,8 +7,39 @@
    logo : tên file trong thư mục logos/ (bỏ trống = hiện chữ viết tắt)
    epc  : EPC Weekly trên Leadsmatcher (26/11/2026) — web tự xếp offer EPC cao lên đầu, KHÔNG hiển thị cho người xem
    link : DÁN LINK "Get Link" CỦA BẠN VÀO ĐÂY. Còn trống thì nút Đăng ký sẽ bị khóa.
+   pin  : true = ghim lên đầu cho người xem ở nước đó
+   tags : nhãn hiển thị trên thẻ; guide: hướng dẫn riêng (xem mẫu VPBank)
    Thêm offer mới: copy 1 dòng và sửa. */
 window.OFFERS = [
+  /* ---- VPBank: vay tín chấp (AccessTrade) — hướng dẫn theo tài liệu "Hướng dẫn luồng vay tín chấp VPBank" ---- */
+  {id:"vpbank",name:"VPBank – Vay tín chấp",cc:"VN",from:"VN",pin:true,
+   logo:"https://www.google.com/s2/favicons?sz=128&domain=vpbank.com.vn",
+   epc:0,link:"https://shorten.asia/2B4zAmf1",
+   tags:["10 – 100 triệu","6 – 60 tháng","Không cần tài sản đảm bảo"],
+   guide:{
+    info:[["Hạn mức vay","10 – 100 triệu đồng"],["Kỳ hạn vay","6 – 60 tháng"],["Hình thức","Tín chấp, đăng ký online"],["Khu vực","Toàn quốc"]],
+    req:["CCCD gắn chip","Từ 23 tuổi trở lên","Tuổi + thời gian vay không quá 70 tuổi","Có công việc và thu nhập","Không có nợ xấu, nợ quá hạn","Tài khoản thanh toán để nhận tiền giải ngân"],
+    steps:[
+     ["Mở link đăng ký","Bấm \"Đăng ký tại VPBank\" để vào trang đăng ký vay tín chấp online của VPBank."],
+     ["Điền thông tin liên hệ","Nhập họ tên, email và số điện thoại chính chủ."],
+     ["Xác thực OTP","Nhập mã OTP gửi về số điện thoại."],
+     ["Chụp CCCD gắn chip","Chụp 2 mặt CCCD, hệ thống tự đọc thông tin. Kiểm tra lại và bấm xác nhận."],
+     ["Thông tin cá nhân & công việc","Bổ sung thông tin cá nhân, công việc và thu nhập."],
+     ["Nhận hạn mức & chọn khoản vay","Xem hạn mức đề xuất, chọn số tiền, kỳ hạn, ngày trả nợ gốc lãi hằng tháng và tài khoản nhận giải ngân."],
+     ["Thông tin tham chiếu & FATCA","Nhập thông tin người tham chiếu và khai báo FATCA theo hướng dẫn."],
+     ["Xác thực danh tính (eKYC)","Đã có tài khoản VPBank: xác thực sinh trắc học qua app VPBank NEO. Khách hàng mới: gọi video với nhân viên VPBank."],
+     ["Ký hợp đồng điện tử","Đọc kỹ hợp đồng (lãi suất, phí, lịch trả nợ) rồi xác nhận bằng mã OTP."],
+     ["Nhận tiền","Khoản vay được giải ngân tự động vào tài khoản bạn đã chọn."]],
+    hours:["Khung giờ xử lý hồ sơ",["Gọi video – Thứ 2 đến Thứ 6","8:00 – 20:00"],["Gọi video – Thứ 7","8:00 – 14:00"],["Giải ngân – Thứ 2 đến Thứ 6","7:00 – 19:50"],["Giải ngân – Thứ 7","7:00 – 14:00"]],
+    notesTitle:"Lưu ý khi đăng ký",
+    notes:[
+     "<b>Sinh trắc học:</b> bấm vào dòng chữ \"Hướng dẫn…\" trên màn hình để mở app VPBank. Không tự thoát trình duyệt rồi mở app, vì thông tin sẽ không đồng bộ về hồ sơ vay.",
+     "<b>Đang có hồ sơ vay dở dang ở kênh khác:</b> chờ 7 ngày, không thao tác với hồ sơ nào, rồi đăng ký lại qua link.",
+     "<b>Hệ thống báo lỗi hoặc chập chờn:</b> thử lại vào khung giờ khác.",
+     "<b>Bảo hiểm không bắt buộc.</b> Nếu được gọi mời mua bảo hiểm mà bạn không có nhu cầu, hãy trả lời rõ \"Không đồng ý mua bảo hiểm\". Nếu đã bị thu phí bảo hiểm ngoài ý muốn, gọi tổng đài <b>1900 545415</b> để yêu cầu hoàn phí.",
+     "<b>Phí tất toán trước hạn</b> (trả trước tối thiểu 2 triệu đồng): 5% số tiền trả trước nếu tất toán trong 12 tháng đầu, 3% từ tháng 13 đến 24, 1% sau 24 tháng.",
+     "<b>Tất toán trên app VPBank NEO:</b> Khoản vay → chọn khoản vay → Quản lý → Tất toán → nhập thông tin theo yêu cầu."]
+   }},
   {id:545,name:"Acredit",cc:"ALL",from:"KZ",logo:"acredit",epc:4.6242,link:"https://track.leadsmatcher.com/click?pid=8527&offer_id=545"},
   {id:1045,name:"SafeCredit",cc:"ALL",from:"RO",logo:"safecredit",epc:1.5507,link:"https://track.leadsmatcher.com/click?pid=8527&offer_id=1045"},
   {id:508,name:"HoraCredit",cc:"ALL",from:"RO",logo:"horacredit",epc:1.1775,link:"https://track.crezu.net/click?pid=8527&offer_id=508"},
