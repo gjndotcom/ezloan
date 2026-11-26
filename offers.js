@@ -73,7 +73,7 @@ window.OFFERS = [
   /* ---- TNEX Finance (thuộc MSB): vay tiêu dùng online (AccessTrade) ---- */
   {id:"tnex",name:"TNEX – Vay online chỉ cần CCCD",cc:"VN",from:"VN",pin:true,
    logo:"tnex",
-   epc:0,link:"",   /* ← DÁN LINK AFFILIATE TNEX VÀO ĐÂY */
+   epc:0,link:"https://shorten.asia/Ge99zzNB",
    tags:["Đến 30 triệu","Tối đa 15 tháng","Không cần chứng minh thu nhập"],
    guide:{
     info:[["Hạn mức tiền mặt","Đến 30 triệu đồng"],["Kỳ hạn","Tối đa 15 tháng"],["Lãi suất","24,4% – 32,5%/năm"],["Duyệt & giải ngân","Khoảng 30 phút"]],
