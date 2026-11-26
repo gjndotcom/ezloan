@@ -213,7 +213,7 @@ footer{border-top:1px solid rgba(212,175,55,.15);padding:50px 0 30px;background:
 
 <div class="modal" id="modal"><div class="modal-box" id="mbox"></div></div>
 
-<script src="offers.js?v=2"></script>
+<script src="offers.js?v=3"></script>
 <script src="i18n.js?v=1"></script>
 <script>
 const O=window.OFFERS.filter(o=>o.link), C=   /* offer chưa có link thì tạm ẩn */window.COUNTRIES, T=window.I18N;
@@ -227,7 +227,7 @@ const flag=cc=>cc?`<img class="flag" src="https://flagcdn.com/w40/${cc.toLowerCa
 const isAll=o=>o.cc==='ALL'||!o.cc;
 const ALLN=O.filter(isAll).length, counts={};
 O.forEach(o=>{ if(!isAll(o)) counts[o.cc]=(counts[o.cc]||0)+1; });
-const CCS=[...new Set([...Object.keys(C),...Object.keys(counts)])];
+const CCS=Object.keys(counts);   /* chỉ hiện nước có khoản vay riêng */
 const nFor=c=>(counts[c]||0)+ALLN;
 const forView=c=>O.filter(o=>isAll(o)||o.cc===c);
 
