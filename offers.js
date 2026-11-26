@@ -94,6 +94,29 @@ window.OFFERS = [
      "<b>Tài khoản TNEX</b> cho phép rút tiền, chuyển khoản 24/7, miễn phí toàn quốc.",
      "TNEX Finance thuộc Ngân hàng TMCP Hàng Hải Việt Nam (MSB)."]
    }},
+  /* ---- MAX by VIB: app vay & thẻ của Ngân hàng Quốc tế VIB (AccessTrade "AppMax Thẻ Vay VIB") ---- */
+  {id:"maxvib",name:"MAX by VIB – Vay & mở thẻ online",cc:"VN",from:"VN",pin:true,
+   logo:"maxvib",
+   epc:0,link:"https://shorten.asia/W9E34whY",
+   tags:["Vay nhanh đến 30 triệu","Giải ngân 3 phút","Lãi từ 0,92%/tháng"],
+   guide:{
+    info:[["Vay nhanh","Đến 30 triệu, giải ngân trong 3 phút"],["Kỳ hạn vay nhanh","Trả góp đến 36 tháng"],["Vay tiền mặt","Đến 1 tỷ đồng, lãi từ 0,92%/tháng"],["MAX Card","Mở thẻ tín dụng online trong 10 phút"]],
+    req:["CCCD gắn chip","Số điện thoại chính chủ","Điện thoại thông minh để cài app MAX by VIB","Đáp ứng điều kiện xét duyệt của VIB"],
+    steps:[
+     ["Mở link & tải app","Bấm \"Đăng ký tại MAX by VIB\" và tải ứng dụng MAX by VIB (App Store / CH Play) từ trang này."],
+     ["Đăng ký tài khoản","Mở app, nhập số điện thoại chính chủ và mã OTP để tạo tài khoản."],
+     ["Định danh điện tử","Chụp CCCD gắn chip và xác thực khuôn mặt theo hướng dẫn trên app."],
+     ["Chọn sản phẩm","Chọn Vay nhanh, Vay tiền mặt hoặc mở MAX Card tùy nhu cầu."],
+     ["Khai thông tin & chọn khoản vay","Nhập thông tin cá nhân, công việc, chọn số tiền và kỳ hạn rồi gửi hồ sơ."],
+     ["Nhận kết quả & ký hợp đồng","Xem kết quả xét duyệt, đọc kỹ lãi suất, phí, lịch trả nợ rồi ký hợp đồng điện tử."],
+     ["Nhận tiền","Khoản vay được giải ngân sau khi hoàn tất ký hợp đồng."]],
+    notesTitle:"Lưu ý",
+    notes:[
+     "<b>\"Lãi suất từ 0,92%/tháng\"</b> là mức thấp nhất. Lãi suất thực tế tùy hồ sơ và sản phẩm bạn chọn — hãy xem kỹ trên hợp đồng.",
+     "<b>MAX Card</b> là thẻ tín dụng chọn hội viên, hoàn 10% cho mọi lĩnh vực chi tiêu (theo chương trình của VIB).",
+     "<b>Ưu đãi 360:</b> hàng ngàn voucher ẩm thực, mua sắm, làm đẹp ngay trên app.",
+     "MAX by VIB là ứng dụng chính thức của Ngân hàng TMCP Quốc tế Việt Nam (VIB)."]
+   }},
   {id:545,name:"Acredit",cc:"KZ",from:"KZ",logo:"acredit",epc:4.6242,link:"https://track.leadsmatcher.com/click?pid=8527&offer_id=545"},
   {id:1045,name:"SafeCredit",cc:"RO",from:"RO",logo:"safecredit",epc:1.5507,link:"https://track.leadsmatcher.com/click?pid=8527&offer_id=1045"},
   {id:508,name:"HoraCredit",cc:"RO",from:"RO",logo:"horacredit",epc:1.1775,link:"https://track.crezu.net/click?pid=8527&offer_id=508"},
